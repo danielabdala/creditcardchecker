@@ -45,18 +45,14 @@ function validateCred(arr) {
 
   for (let i = arr.length - 1; i >= 0; i--) {
     if (i % 2 === 0 && i !== arr.length - 1) {
-      // console.log(`im here inside ${i} - ${arr[i]}`)
       let newValue = arr[i] * 2;
-      // console.log(`new value is ${newValue}`)
 
       if (newValue > 9) {
         newValue -= 9;
       }
-      // console.log(`Pushing ${newValue} inside`)
+
       newArray.push(newValue);
     } else {
-      // console.log(`im here outside ${i} - ${arr[i]}`)
-      // console.log(`Pushing ${arr[i]} outside`)
       newArray.push(arr[i]);
     }
   }
